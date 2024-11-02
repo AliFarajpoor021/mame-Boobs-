@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.d-flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* modal style codes */
+.modal-main-box {
+    z-index: 120;
+    position: absolute;
+    box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+    padding: 1.5rem;
+    top: -1000px;
+    transition: all ease 1s;
+    text-align: center;
+    font-size: 20px;
+    gap: 2rem;
+    border-radius: 12px;
+    min-height: 360px;
+    max-height: 360px;
+    background-color: #fff;
+}
+
+/* .fa-circle-xmark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+} */
+
+.modal-text {
+    width: 340px;
+}
+
+.accept-modal-btn {
+    border-radius: 12px;
+    background-color: #00ff1a;
+    width: 100%;
+    height: 50px;
+}
+
+.donotaccept-modal-btn {
+    border-radius: 12px;
+    background-color: #ff0000;
+    width: 100%;
+    height: 50px;
+}
+
+/* boobs main box style codes */
+.main-box {
+    gap: 5rem;
+}
+
+.custom-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.custom-item-box {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+select {
+    width: 150px;
+}
+
+.boobs-main-box {
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.boobs {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+/* boobs style  */
+.boobs {
+    background-color: #F9F5E7;
+}
+
+.around-boobs {
+    background-color: #EED3D9;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.nipple {
+    background-color: #F06292;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+/* responsive */
+@media screen and (max-width:584px) {
+    .custom-box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:413px) {
+    body {
+        padding: 0 0.5rem;
+    }
+
+    .modal-text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .boobs-main-box {
+        flex-direction: column;
+    }
+}
