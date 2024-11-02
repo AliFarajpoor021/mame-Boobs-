@@ -122,6 +122,10 @@ select {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+
+    .boobs-main-box {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:413px) {
@@ -135,10 +139,7 @@ select {
 }
 
 @media screen and (max-width:400px) {
-    /* .boobs-main-box {
+    .boobs-main-box {
         flex-direction: column;
-    } */
-    body{
-        background-color: red;
     }
 }
