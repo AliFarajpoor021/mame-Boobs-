@@ -135,9 +135,9 @@ select {
 }
 
 @media screen and (max-width:400px) {
-    .boobs-main-box {
+    /* .boobs-main-box {
         flex-direction: column;
-    }
+    } */
     body{
         background-color: red;
     }
