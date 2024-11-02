@@ -138,4 +138,7 @@ select {
     .boobs-main-box {
         flex-direction: column;
     }
+    body{
+        background-color: red;
+    }
 }
